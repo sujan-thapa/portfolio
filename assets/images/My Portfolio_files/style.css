@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ensures consistent box sizing */
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 45px;
+    align-items: center;
+}
+
+.info {
+    display: flex;
+    flex-direction: row;
+    gap: 51px;
+    text-decoration: none;
+    list-style: none;
+}
+
+.main-div .thumbnail {
+    width: 100vw; /* Full width of the viewport */
+    height: 50vh; /* Height is 50% of the viewport */
+    overflow: hidden; /* Ensures no overflow */
+    display: flex; /* Centers the image inside the container */
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4; /* Optional: Adds a background color */
+}
+
+.main-div .thumbnail > img {
+    width: 100%; /* Scale image to fit the width of the container */
+    height: 100%; /* Scale image to fit the height of the container */
+    object-fit: contain; /* Ensures the entire image is visible */
+}
+
+.footer{
+    position: absolute;
+    /* margin-bottom: 0; */
+    bottom: 0;
+    display: flex;
+    background-color: black;
+}
