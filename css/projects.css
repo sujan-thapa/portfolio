@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+    /* Makes children stack vertically */
+    box-sizing: border-box;
+    /* Ensures consistent box sizing */
+    /* position: relative; */
+
+}
+
+body {
+    display: flex;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 45px;
+    align-items: center;
+}
+
+.info {
+    display: flex;
+    flex-direction: row;
+    gap: 51px;
+    text-decoration: none;
+    list-style: none;
+}
+
+.info a {
+    text-decoration: none;
+    color: black;
+}
+
+
+/* css for about me */
+
+/* General container styling */
+#projects {
+    display: flex;
+    flex-direction: column;
+    /* Stacks boxes vertically */
+    gap: 20px;
+    /* Adds space between boxes */
+    flex: 1;
+}
+
+#projects .heading{
+    width: 50vw;
+    margin: 24px;
+}
+
+#projects .heading h3 {
+    font-family: "Nanum Gothic", sans-serif;
+    font-weight: 300;
+    font-size: 30px;
+    font-style: normal;
+    /* line-height: 58px; */
+}
+
+/* Styling for individual boxes */
+.box {
+    width: 46%;
+    /* Half column width */
+    height: 263px;
+    margin: 24px;
+    /* Set a fixed height for demo */
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Centers content inside the box */
+    color: black;
+    font-weight: bold;
+    padding: 10px;
+}
+
+/* Positioning alternate sides */
+.left {
+    align-self: flex-start;
+    /* Aligns to the left */
+}
+
+.right {
+    align-self: flex-end;
+    /* Aligns to the right */
+}
+
+
+/* css for footer */
+
+.footer {
+    /* max-width:100vw; */
+    width: 100vw;
+    margin: auto;
+    padding: 14px;
+    background-color: black;
+    /* position: absolute; */
+    bottom: 0;
+
+    /* position: relative; */
+    /* margin-bottom: 0; */
+    /* bottom: 0; */
+
+
+}
+
+.footer footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    flex-direction: grid;
+    width: 60vw;
+
+    margin: auto;
+    /* background-color: yellow; */
+    padding: 10px 0;
+}
+
+footer .footer-items {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+footer .footer-items a {
+    color: white;
+    text-decoration: none;
+}

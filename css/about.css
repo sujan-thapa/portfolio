@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    flex-direction: column; /* Makes children stack vertically */
+    box-sizing: border-box; /* Ensures consistent box sizing */
+    /* position: relative; */
+    
+}
+body{
+    display: flex;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 45px;
+    align-items: center;
+}
+
+.info {
+    display: flex;
+    flex-direction: row;
+    gap: 51px;
+    text-decoration: none;
+    list-style: none;
+}
+.info a {
+    text-decoration: none;
+    color: black;
+}
+
+
+/* css for about me */
+
+#about-me{
+    width: 100vw;
+    height: 80vh;
+    flex: 1;
+
+}
+#about-me .profile{
+    background-image: url(../assets/images/me.png);
+    background-size: cover;
+    width: 100vw;
+    height: 60vh;
+}
+#about-me .biography{
+    margin: 12px;
+}
+
+
+/* css for footer */
+
+.footer{
+    /* max-width:100vw; */
+    width: 100vw;
+    margin: auto;
+    padding: 14px;
+    background-color: black;
+    /* position: absolute; */
+    bottom: 0;
+    
+    /* position: relative; */
+    /* margin-bottom: 0; */
+    /* bottom: 0; */
+    
+    
+}
+
+.footer footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    flex-direction: grid;
+    width: 60vw;
+    
+    margin: auto;
+    /* background-color: yellow; */
+    padding: 10px 0;
+}
+
+footer .footer-items{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+footer .footer-items a{
+    color: white;
+    text-decoration: none;
+}
