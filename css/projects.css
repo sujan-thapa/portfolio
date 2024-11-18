@@ -65,15 +65,17 @@ body {
     width: 46%;
     /* Half column width */
     height: 263px;
-    margin: 24px;
+    margin: 12px 24px 12px;
+    /* margin: 25px 26px 75px; */
+
     /* Set a fixed height for demo */
     background-color: lightblue;
     display: flex;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
     /* Centers content inside the box */
     color: black;
-    font-weight: bold;
+    /* font-weight: bold; */
     padding: 10px;
 }
 

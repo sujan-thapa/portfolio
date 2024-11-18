@@ -71,6 +71,11 @@ html, body{
     height: 38px;
 }
 
+#form-feedback{
+    width: 20%;
+    height: 20px;
+}
+
 
 
 /* css for footer */
