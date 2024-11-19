@@ -6,18 +6,7 @@ const projects = [
 ];
 
 const projectList = document.getElementById("projects");
-
-// projects.forEach(project => {
-//     const projectDiv = document.createElement("div");
-//     projectDiv.classList.add("box");
-//     projectDiv.classList.add("left");
-
-
-//     projectDiv.innerHTML = `<h3>${project.name}</h3><p>${project.description}</p><a href="${project.link}">View Project</a>`;
-//     projectList.appendChild(projectDiv);
-// });
-
-// Use for...of loop to iterate over the array of objects
+// for...of loop to iterate over the array of objects
 for (const [index,project] of projects.entries()) {
     const projectDiv = document.createElement("div");
     projectDiv.classList.add("box");
